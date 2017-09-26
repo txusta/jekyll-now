@@ -21,13 +21,13 @@ Antes de activar el exploit intentaremos sacar la versión de SAMBA. Para ello h
 
 ![SAMBA]({{ site.baseurl }}/images/kioptrix-level1-3.PNG)
 
-Vemos que tiene la versión Samba 2.2.1a
+Vemos que tiene la versión **Samba 2.2.1a**
 
 Arrancamos Metasploit y buscamos exploit para Samba:
 
 ![METASPLOIT]({{ site.baseurl }}/images/kioptrix-level1-4.PNG)
 
-Vamos a utilizar el de Trans2open. Lo cargamos y entramos en su información para ver con qué versiones de SAMBA se puede utilizar:
+Vamos a utilizar el de **Trans2open**. Lo cargamos y entramos en su información para ver con qué versiones de SAMBA se puede utilizar:
 
 ![Trans2open]({{ site.baseurl }}/images/kioptrix-level1-5.PNG)
 
