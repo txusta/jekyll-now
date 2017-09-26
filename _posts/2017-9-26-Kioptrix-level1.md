@@ -5,9 +5,9 @@ title: Kioptrix Level 1 WRITE-UP
 
 Nos hemos descargado la máquina virtual de Kioptrix level 1 desde la página web de Vulnhub y la arrancaremos junto a la máquina Kali Linux para conseguir el objetivo: Una shell de root en la máquina víctima. 
 
-Vamos a la máquina Kali y con un ifconfig vemos que nuestra ip es: 192.168.56.129
+Vamos a la máquina Kali y con un **ifconfig** vemos que nuestra ip es: 192.168.56.129
 
-Ejecutamos NMAP para descubrir IP de la víctima:
+Ejecutamos **NMAP** para descubrir IP de la víctima:
 
 ![NMAP]({{ site.baseurl }}/images/kioptrix-level1-1.PNG)
 
@@ -15,9 +15,9 @@ La descubrimos en la IP: 192.168.56.128
 
 ![NMAP]({{ site.baseurl }}/images/kioptrix-level1-2.PNG)
 
-Vemos que tiene diferentes puertos abiertos y en este caso nos vamos a centrar en el puerto 139/tcp netbios (samba).
+Vemos que tiene diferentes puertos abiertos y en este caso nos vamos a centrar en el puerto **139/tcp netbios (samba)**.
 
-Antes de activar el exploit intentaremos sacar la versión de SAMBA. Para ello haremos uso del comando SMBCLIENT.
+Antes de activar el exploit intentaremos sacar la versión de SAMBA. Para ello haremos uso del comando **smbclient**.
 
 ![SAMBA]({{ site.baseurl }}/images/kioptrix-level1-3.PNG)
 
@@ -49,10 +49,10 @@ Ejecutamos y vemos que ya tenemos una shell:
 
 ![shell]({{ site.baseurl }}/images/kioptrix-level1-9.PNG)
 
-Ejecutamos whoami y vemos que somos ROOT:
+Ejecutamos **whoami** y vemos que somos ROOT:
 
 ![root]({{ site.baseurl }}/images/kioptrix-level1-0.PNG)
 
 
-¡Reto conseguido!
+**¡Reto conseguido!**
 
