@@ -9,7 +9,7 @@ Vamos a la máquina Kali y con un ifconfig vemos que nuestra ip es: 192.168.56.1
 
 Ejecutamos NMAP para descubrir IP de la víctima:
 
-![NMAP]({{ site.baseurl }}/images/kioptrix-level1-1.png)
+![NMAP]({{ site.baseurl }}/images/kioptrix-level1-1.PNG)
 
 La descubrimos en la IP: 192.168.56.128
 
