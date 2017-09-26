@@ -47,39 +47,12 @@ Vamos a usar el de reverse_tcp y le vamos pasando nuestra IP al parámetro LHOST
 
 Ejecutamos y vemos que ya tenemos una shell:
 
-![Reverse-tcp]({{ site.baseurl }}/images/kioptrix-level1-9.png)
+![shell]({{ site.baseurl }}/images/kioptrix-level1-9.png)
 
 Ejecutamos whoami y vemos que somos ROOT:
 
-![Reverse-tcp]({{ site.baseurl }}/images/kioptrix-level1-0.png)
+![root]({{ site.baseurl }}/images/kioptrix-level1-0.png)
 
 
 ¡Reto conseguido!
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
