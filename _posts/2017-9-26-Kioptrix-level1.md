@@ -13,45 +13,45 @@ Ejecutamos NMAP para descubrir IP de la víctima:
 
 La descubrimos en la IP: 192.168.56.128
 
-![NMAP]({{ site.baseurl }}/images/kioptrix-level1-2.png)
+![NMAP]({{ site.baseurl }}/images/kioptrix-level1-2.PNG)
 
 Vemos que tiene diferentes puertos abiertos y en este caso nos vamos a centrar en el puerto 139/tcp netbios (samba).
 
 Antes de activar el exploit intentaremos sacar la versión de SAMBA. Para ello haremos uso del comando SMBCLIENT.
 
-![SAMBA]({{ site.baseurl }}/images/kioptrix-level1-3.png)
+![SAMBA]({{ site.baseurl }}/images/kioptrix-level1-3.PNG)
 
 Vemos que tiene la versión Samba 2.2.1a
 
 Arrancamos Metasploit y buscamos exploit para Samba:
 
-![METASPLOIT]({{ site.baseurl }}/images/kioptrix-level1-4.png)
+![METASPLOIT]({{ site.baseurl }}/images/kioptrix-level1-4.PNG)
 
 Vamos a utilizar el de Trans2open. Lo cargamos y entramos en su información para ver con qué versiones de SAMBA se puede utilizar:
 
-![Trans2open]({{ site.baseurl }}/images/kioptrix-level1-5.png)
+![Trans2open]({{ site.baseurl }}/images/kioptrix-level1-5.PNG)
 
 Vemos que nos puede funcionar, ya que nuestra versión de samba está entre la 2.2.0 y la 2.2.8
 
 Cargamos las opciones del exploit:
 
-![Opciones-exploit]({{ site.baseurl }}/images/kioptrix-level1-6.png)
+![Opciones-exploit]({{ site.baseurl }}/images/kioptrix-level1-6.PNG)
 
 Vamos a buscar un payload para cargar en el exploit:
 
-![Opciones-exploit]({{ site.baseurl }}/images/kioptrix-level1-7.png)
+![Opciones-exploit]({{ site.baseurl }}/images/kioptrix-level1-7.PNG)
 
 Vamos a usar el de reverse_tcp y le vamos pasando nuestra IP al parámetro LHOST:
 
-![Reverse-tcp]({{ site.baseurl }}/images/kioptrix-level1-8.png)
+![Reverse-tcp]({{ site.baseurl }}/images/kioptrix-level1-8.PNG)
 
 Ejecutamos y vemos que ya tenemos una shell:
 
-![shell]({{ site.baseurl }}/images/kioptrix-level1-9.png)
+![shell]({{ site.baseurl }}/images/kioptrix-level1-9.PNG)
 
 Ejecutamos whoami y vemos que somos ROOT:
 
-![root]({{ site.baseurl }}/images/kioptrix-level1-0.png)
+![root]({{ site.baseurl }}/images/kioptrix-level1-0.PNG)
 
 
 ¡Reto conseguido!
