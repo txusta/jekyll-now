@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Kioptrix Level 1 WRITE-UP
+categories: Writeup
 ---
 
 Nos hemos descargado la máquina virtual de Kioptrix level 1 desde la página web de Vulnhub y la arrancaremos junto a la máquina Kali Linux para conseguir el objetivo: Una shell de root en la máquina víctima. 
