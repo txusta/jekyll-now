@@ -1,0 +1,11 @@
+
+
+Nos hemos descargado la máquina virtual de Kioptrix level 1 desde la página web de Vulnhub y la arrancaremos junto a la máquina Kali Linux para conseguir el objetivo: Una shell de root en la máquina víctima. 
+
+Vamos a la máquina Kali y con un **ifconfig** vemos que nuestra ip es: 192.168.56.129
+
+Ejecutamos **NMAP** para descubrir IP de la víctima:
+
+![NMAP]({{ site.baseurl }}/images/kioptrix-level1-1.PNG)
+
+La descubrimos en la IP: 192.168.56.128
