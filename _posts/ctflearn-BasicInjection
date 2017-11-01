@@ -1,11 +1,18 @@
+---
+layout: post
+title: CTF LEARN - Basic Injection
+categories: Writeup
+---
+
+Entramos en la URL que nos proporcionan http://web.ctflearn.com/web4/
+
+![NMAP]({{ site.baseurl }}/images/ctflearn-basicinjection1.PNG)
 
 
-Nos hemos descargado la máquina virtual de Kioptrix level 1 desde la página web de Vulnhub y la arrancaremos junto a la máquina Kali Linux para conseguir el objetivo: Una shell de root en la máquina víctima. 
+Nos encontramos con una caja de texto muy jugosa. Vamos a intentarlo con el sql injection. Introducimos el comando ' or '1'='1 en la caja y pulsamos en submit.
 
-Vamos a la máquina Kali y con un **ifconfig** vemos que nuestra ip es: 192.168.56.129
+Veremos que hemos conseguido la fuga de datos y que obtenemos el contenido de la flag que nos piden.
 
-Ejecutamos **NMAP** para descubrir IP de la víctima:
+![NMAP]({{ site.baseurl }}/images/ctflearn-basicinjection2.PNG)
 
-![NMAP]({{ site.baseurl }}/images/kioptrix-level1-1.PNG)
-
-La descubrimos en la IP: 192.168.56.128
+¡Reto conseguido!
